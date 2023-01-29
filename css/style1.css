@@ -1,0 +1,162 @@
+body {
+  background: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  margin: 0; }
+
+header {
+  height: 600px;
+  margin: 0 auto;
+  background: url(../img/m-h-day.jpg) no-repeat fixed 0 0;
+  background-position-y: 70%;
+  background-position-x: 95%;
+  border: 1px solid transparent;
+  border-bottom-right-radius: 45%;
+  color: #2C2F3C; }
+  header #switchBtn {
+    width: 50px;
+    height: 50px;
+    background-color: #21232E;
+    color: #dbdbdb;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  header > div {
+    margin: 0 auto;
+    width: 1240px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px; }
+    header > div > .landing-logo {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0; }
+      header > div > .landing-logo > img {
+        height: 36px; }
+      header > div > .landing-logo > p {
+        font-size: 20px;
+        font-weight: 600; }
+        header > div > .landing-logo > p span {
+          display: block;
+          font-size: 8px; }
+    header > div > div {
+      display: flex;
+      align-items: center;
+      gap: 160px; }
+    header > div .header_heading {
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 1em;
+      width: 500px;
+      margin: 0; }
+      header > div .header_heading span {
+        display: inline-flex;
+        background-color: #14A0C7;
+        height: 64px; }
+    header > div .header_text {
+      width: 500px;
+      font-size: 14px; }
+    header > div a {
+      font-size: 1rem; }
+
+main {
+  margin: 0 auto;
+  width: 960px;
+  color: #dbdbdb; }
+  main .section_text {
+    color: #2C2F3C;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600; }
+    main .section_text span {
+      display: inline-flex;
+      background-color: #14A0C7;
+      height: 34px; }
+  main .section_card {
+    background-color: #21232E;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin: 20px; }
+    main .section_card > img {
+      border-radius: 4px;
+      height: 240px; }
+    main .section_card div {
+      padding: 0 64px;
+      text-align: center; }
+      main .section_card div .section_card_heading {
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px; }
+      main .section_card div .section_card_text {
+        text-align: left;
+        margin: 20px 0; }
+      main .section_card div a {
+        color: #dbdbdb; }
+  main .section_banner {
+    position: relative;
+    top: 60px;
+    width: 960px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #699900, #2B59DD);
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    main .section_banner > div .section_banner_heading {
+      color: #2C2F3C;
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0; }
+      main .section_banner > div .section_banner_heading span {
+        display: inline-flex;
+        background-color: #14A0C7;
+        height: 34px; }
+    main .section_banner > div .section_banner_text {
+      font-size: 12px; }
+
+footer {
+  background-color: #21232E;
+  color: #dbdbdb;
+  padding: 124px 0 24px 0;
+  font-size: 12px; }
+  footer > div {
+    margin: 0 auto;
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer > div > div {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 12px; }
+      footer > div > div > img {
+        height: 36px; }
+      footer > div > div > p {
+        font-size: 20px;
+        font-weight: 600; }
+        footer > div > div > p span {
+          display: block;
+          font-size: 8px; }
+    footer > div > p {
+      width: 250px; }
+
+button {
+  background-color: #699900;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 32px; }
+
+a {
+  color: #fff; }

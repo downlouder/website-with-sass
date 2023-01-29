@@ -1,0 +1,196 @@
+// Write your styles here
+body {
+    background: $mainBackgroundColor;
+    font-family: $defaultFont;
+    font-size: $defaultFontSize;
+    margin: 0;
+}
+header {
+    height: 600px;
+    margin: 0 auto;
+    background: url(#{$mainImage}) no-repeat fixed 0 0;
+    background-position-y: 70%;
+    background-position-x: 95%;
+    border: 1px solid transparent;
+    border-bottom-right-radius: 45%;
+    color: $secondFontColor;
+    #switchBtn {
+        width: 50px;
+        height: 50px;
+        background-color: $switchBtnBg;
+        color: $switchBtn;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    > div {
+        margin: 0 auto;
+        width: 1240px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        > .landing-logo {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0;
+            > img {
+                height: 36px;
+            }
+            > p {
+                font-size: 20px;
+                font-weight: $headerFontWeight;
+                span {
+                    display: block;
+                    font-size: 8px;
+                }
+            }
+        }
+        > div {
+            display: flex;
+            align-items: center;
+            gap: 160px;
+        }
+        .header_heading {
+            font-size: $firstHeaderSize;
+            font-weight: 800;
+            line-height: 1em;
+            width: 500px;
+            margin: 0;
+            span {
+                display: inline-flex;
+                background-color: $fillContentBackground;
+                height: 64px;
+            }
+        }
+        .header_text {
+            width: 500px;
+            font-size: $defaultFontSize;
+        }
+        a {
+            font-size: 1rem;
+        }
+    }
+}
+main {
+    margin: 0 auto;
+    width: 960px;
+    color: $contentColor;
+    .section_text {
+        color: $secondFontColor;
+        font-size: $secondHeaderSize;
+        text-align: center;
+        font-weight: $headerFontWeight;
+        span {
+            display: inline-flex;
+            background-color: $fillContentBackground;
+            height: 34px;
+        }
+    }
+    .section_card {
+        background-color: $contentBackground;
+        border-radius: $defaultBorderRadius;
+        display: flex;
+        align-items: center;
+        padding: $defaultPadding;
+        margin: $divMargin;
+        > img {
+            border-radius: $defaultBorderRadius;
+            height: 240px;
+        }
+        div {
+            padding: 0 64px;
+            text-align: center;
+            .section_card_heading {
+                color: $headerColor;
+                font-weight: $headerFontWeight;
+                font-size: $thirdHeaderSize;
+            }
+            .section_card_text {
+                text-align: left;
+                margin: 20px 0;
+            }
+            a {
+                color: $contentColor;
+            }
+        }
+    
+    }
+    .section_banner {
+        position: relative;
+        top: 60px;
+        width: 960px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: $defaultBorderRadius;
+        background: linear-gradient(45deg, $firstGradientColor, $secondGradientColor);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        > div {
+            .section_banner_heading {
+                color: $secondFontColor;
+                font-size: 24px;
+                font-weight: 800;
+                margin: 0;
+                span {
+                    display: inline-flex;
+                    background-color: $fillContentBackground;
+                    height: 34px;
+                }
+            }
+            .section_banner_text {
+                font-size: 12px;
+            }
+        }
+    }
+}
+footer {
+    background-color: $contentBackground;
+    color: $contentColor;
+    padding: 124px 0 24px 0;
+    font-size: 12px;
+    > div {
+        margin: 0 auto;
+        width: 1240px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > div {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            > img {
+                height: 36px;
+            }
+            > p {
+                font-size: 20px;
+                font-weight: $headerFontWeight;
+                span {
+                    display: block;
+                    font-size: 8px;
+                }
+            }
+        }
+        > p {
+            width: 250px;
+        }
+    }
+}
+button {
+    background-color: $buttonBackground;
+    border: none;
+    border-radius: $defaultBorderRadius;
+    color: $headerColor;
+    font-weight: $headerFontWeight;
+    padding: 10px 32px;
+}
+a {
+    color: $headerColor;
+}
