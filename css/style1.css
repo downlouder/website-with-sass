@@ -56,9 +56,8 @@ header {
       width: 500px;
       margin: 0; }
       header > div .header_heading span {
-        display: inline-flex;
-        background-color: #14A0C7;
-        height: 64px; }
+        line-height: 50px;
+        background: linear-gradient(to bottom, transparent 35%, #14A0C7 35%, #14A0C7 90%, transparent 90%); }
     header > div .header_text {
       width: 500px;
       font-size: 14px; }
@@ -75,9 +74,8 @@ main {
     text-align: center;
     font-weight: 600; }
     main .section_text span {
-      display: inline-flex;
-      background-color: #14A0C7;
-      height: 34px; }
+      background: linear-gradient(to bottom, transparent 0%, #14A0C7 0%, #14A0C7 90%, transparent 90%);
+      line-height: 34px; }
   main .section_card {
     background-color: #21232E;
     border-radius: 4px;
@@ -102,7 +100,7 @@ main {
         color: #dbdbdb; }
   main .section_banner {
     position: relative;
-    top: 60px;
+    transform: translateY(50%);
     width: 960px;
     height: 120px;
     margin: 0 auto;
@@ -117,17 +115,16 @@ main {
       font-weight: 800;
       margin: 0; }
       main .section_banner > div .section_banner_heading span {
-        display: inline-flex;
-        background-color: #14A0C7;
-        height: 34px; }
-    main .section_banner > div .section_banner_text {
-      font-size: 12px; }
+        background: linear-gradient(to bottom, #14A0C7 90%, transparent 90%);
+        line-height: 40px; }
+
+.section_banner_text, footer {
+  font-size: 12px; }
 
 footer {
   background-color: #21232E;
   color: #dbdbdb;
-  padding: 124px 0 24px 0;
-  font-size: 12px; }
+  padding: 124px 0 24px 0; }
   footer > div {
     margin: 0 auto;
     width: 1240px;

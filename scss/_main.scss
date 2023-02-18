@@ -63,9 +63,8 @@ header {
             width: 500px;
             margin: 0;
             span {
-                display: inline-flex;
-                background-color: $fillContentBackground;
-                height: 64px;
+                line-height: 50px;
+                background: linear-gradient(to bottom, transparent 35%, $fillContentBackground 35%, $fillContentBackground 90%, transparent 90%);
             }
         }
         .header_text {
@@ -87,9 +86,8 @@ main {
         text-align: center;
         font-weight: $headerFontWeight;
         span {
-            display: inline-flex;
-            background-color: $fillContentBackground;
-            height: 34px;
+            background: linear-gradient(to bottom, transparent 0%, $fillContentBackground 0%, $fillContentBackground 90%, transparent 90%);
+            line-height: 34px;
         }
     }
     .section_card {
@@ -123,7 +121,7 @@ main {
     }
     .section_banner {
         position: relative;
-        top: 60px;
+        transform: translateY(50%);
         width: 960px;
         height: 120px;
         margin: 0 auto;
@@ -139,22 +137,21 @@ main {
                 font-weight: 800;
                 margin: 0;
                 span {
-                    display: inline-flex;
-                    background-color: $fillContentBackground;
-                    height: 34px;
+                    background: linear-gradient(to bottom, $fillContentBackground 90%, transparent 90%);
+                    line-height: 40px;
                 }
-            }
-            .section_banner_text {
-                font-size: 12px;
             }
         }
     }
 }
+.section_banner_text {
+    font-size: 12px;
+}
 footer {
+    @extend .section_banner_text;
     background-color: $contentBackground;
     color: $contentColor;
     padding: 124px 0 24px 0;
-    font-size: 12px;
     > div {
         margin: 0 auto;
         width: 1240px;
@@ -183,7 +180,8 @@ footer {
         }
     }
 }
-button {
+
+@mixin buttons {
     background-color: $buttonBackground;
     border: none;
     border-radius: $defaultBorderRadius;
@@ -191,6 +189,14 @@ button {
     font-weight: $headerFontWeight;
     padding: 10px 32px;
 }
-a {
+
+@mixin links {
     color: $headerColor;
+}
+
+button {
+    @include buttons;
+}
+a {
+    @include links;
 }
